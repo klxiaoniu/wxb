@@ -1,525 +1,563 @@
 <!DOCTYPE html>
-<html><head>
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<meta charset="utf-8">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-<style>
-a:link {color:#3A3A3A;text-decoration:underline;}
-a:visited {color:#3A3A3A;text-decoration:underline;}
-a:hover {color:#D1D1D1;text-decoration:none;}
-a:active {color:black;}
-</style>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+      a:link {
+        color: #3a3a3a;
+        text-decoration: underline;
+      }
+      a:visited {
+        color: #3a3a3a;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: #d1d1d1;
+        text-decoration: none;
+      }
+      a:active {
+        color: black;
+      }
+    </style>
 
-<title>无限宝第三方插件</title>
-<link href="./proxy_files/commen.css" rel="stylesheet" type="text/css">
-<link href="./proxy_files/animate.css" rel="stylesheet" type="text/css">
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-          var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?b70aca2ed0be3c1becdd1177e252c7e1";
-              var s = document.getElementsByTagName("script")[0]; 
-                s.parentNode.insertBefore(hm, s);
-    })();
+    <title>无限宝第三方插件</title>
+    <link href="./proxy_files/commen.css" rel="stylesheet" type="text/css" />
+    <link href="./proxy_files/animate.css" rel="stylesheet" type="text/css" />
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b70aca2ed0be3c1becdd1177e252c7e1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
-</head>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+  </head>
 
-<body>
-<!--<div class="mainwrap">
+  <body>
+    <!--<div class="mainwrap">
     <div class="datesty"></div>-->
-        <div class="recodewrap" style="height: 4260px;">
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    <br>
-                    <span>功能</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">解除锁屏·自动签到·修改认真度……</h2>
-                    <a href="https://gitcode.net/ghhhhuyh/wxbplugin/-/raw/master/WxbPluginInstaller_4.4.5.exe?inline=false">点击下载插件</a><br>
-                    <a href="https://www.bilibili.com/video/BV1Ca4y1E7mx">点击观看教程</a><br>
-                    插件最新测试版可加群获取；下载失败请进入群文件获取；插件可能被 Defender 等报毒，请信任<br>
-                    Win7 用户插件无法联网、闪退，请参考 <a href="https://www.bilibili.com/video/bv1234y1n7ij">补丁安装教程</a><br>
-                    一旦您下载、使用本软件，即代表您已阅读并同意 <a href="https://yuhuison-1259460701.cos.ap-chengdu.myqcloud.com/mzsm.html">用户协议和免责声明</a><br>
-                    请注意：插件为免费软件，禁止任何形式的倒卖行为。若您从其他途径有偿取得，请立即退款并举报。<br>
-                </div>
-            </div>
+    <div class="recodewrap" style="height: 4260px">
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            <br />
+            <span>功能</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">解除锁屏·自动签到·修改认真度……</h2>
+            <a
+              href="https://gitcode.net/ghhhhuyh/wxbplugin/-/raw/master/WxbPluginInstaller_4.4.5.exe?inline=false"
+              >点击下载插件</a
+            ><br />
+            <a href="https://www.bilibili.com/video/BV1Ca4y1E7mx"
+              >点击观看教程</a
+            ><br />
+            插件最新测试版可加群获取；下载失败请进入群文件获取；插件可能被
+            Defender 等报毒，请信任<br />
+            Win7 用户插件无法联网、闪退，请参考
+            <a href="https://www.bilibili.com/video/bv1234y1n7ij"
+              >补丁安装教程</a
+            ><br />
+            一旦您下载、使用本软件，即代表您已阅读并同意
+            <a
+              href="https://yuhuison-1259460701.cos.ap-chengdu.myqcloud.com/mzsm.html"
+              >用户协议和免责声明</a
+            ><br />
+            请注意：插件为免费软件，禁止任何形式的倒卖行为。若您从其他途径有偿取得，请立即退款并举报。<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2022<br>
-                    <span>08.16</span>
-                    <p>祝2233娘生日快乐</p>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.4.5版</h2>
-                    <h4>折射光芒的碎片，汇集成你所爱画面；收集点滴的努力，汇聚成更好用插件</h4>
-1. 优化界面显示效果<br>
-2. 修复了无限宝关闭后插件托盘图标残留的问题<br>
-3. 改进自动签到算法，大幅度提高可用性<br>
-4. 改进 实验性功能 / 美化<br>
-5. 优化 PPT 导出文件的命名方式，统一为 0 开头的三位数字，避免某些图片查看器预览时顺序错乱<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2022<br />
+            <span>08.16</span>
+            <p>祝2233娘生日快乐</p>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.4.5版</h2>
+            <h4>
+              折射光芒的碎片，汇集成你所爱画面；收集点滴的努力，汇聚成更好用插件
+            </h4>
+            1. 优化界面显示效果<br />
+            2. 修复了无限宝关闭后插件托盘图标残留的问题<br />
+            3. 改进自动签到算法，大幅度提高可用性<br />
+            4. 改进 实验性功能 / 美化<br />
+            5. 优化 PPT 导出文件的命名方式，统一为 0
+            开头的三位数字，避免某些图片查看器预览时顺序错乱<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2022<br>
-                    <span>07.20</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.4.4版</h2>
-1.  调整联网部分逻辑，优化闪退问题<br>
-2.  最小化、窗口化逻辑改动避免缩放问题<br>
-3.  逻辑修改，适配“下一课”功能<br>
-4.  对签到功能进行细微调整优化<br>
-5.  对界面以及安装提示进行了优化调整<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2022<br />
+            <span>07.20</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.4.4版</h2>
+            1. 调整联网部分逻辑，优化闪退问题<br />
+            2. 最小化、窗口化逻辑改动避免缩放问题<br />
+            3. 逻辑修改，适配“下一课”功能<br />
+            4. 对签到功能进行细微调整优化<br />
+            5. 对界面以及安装提示进行了优化调整<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2022<br>
-                    <span>07.11</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.4.3版</h2>
-1.  修复主界面图标过大的问题<br>
-2.  为 Win7 系统无法正常联网增加了提示<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2022<br />
+            <span>07.11</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.4.3版</h2>
+            1. 修复主界面图标过大的问题<br />
+            2. 为 Win7 系统无法正常联网增加了提示<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2022<br>
-                    <span>07.09</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.4.2版</h2>
-1.  适配 202205 新版自动签到，注意：需要重新检测参数<br>
-2.  改进自动签到配置流程，支持 PushDeer 跨终端推送<br>
-3.  扩展窗口和日志增加多屏幕提示<br>
-4.  实验性功能->聊天界面美化支持选择居中或平铺（切换该设置需要重启无限宝）<br>
-5.  主界面小图标全部实现高清化<br>
-6.  优化安装和加载，其他细节优化<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2022<br />
+            <span>07.09</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.4.2版</h2>
+            1. 适配 202205 新版自动签到，注意：需要重新检测参数<br />
+            2. 改进自动签到配置流程，支持 PushDeer 跨终端推送<br />
+            3. 扩展窗口和日志增加多屏幕提示<br />
+            4.
+            实验性功能->聊天界面美化支持选择居中或平铺（切换该设置需要重启无限宝）<br />
+            5. 主界面小图标全部实现高清化<br />
+            6. 优化安装和加载，其他细节优化<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2022<br>
-                    <span>02.26</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.4.1版</h2>
-1.  初步适配高分屏，插件界面更细腻<br>
-2.  改进自动签到功能（需先进行配置），优化高分屏下的工作效果，支持自定义签到参数，增加匹配算法<br>
-3.  优化与 XP 系统的兼容性<br>
-4.  支持保存某些设置配置，无需每次重设，包括：隐藏插件文字，拦截全屏截图，实时显示认真度信息，停止显示日志，<br>
-    锁定宽高数据，PPT导出设置，签到相关设置<br>
-5.  新增签到 WebHook 上报，用于支持专业用户的二次开发（如通知 QQ 机器人发送提示消息等）<br>
-6.  插件主窗口实现了窗口阴影和圆角化，部分按钮增加了提示信息<br>
-7.  添加 TeamViewerQS 一键下载运行按钮，方便远程控制协助<br>
-8.  部分提示详细化，排版优化<br>
-9.  公告支持展开<br>
-10.  修复安装器 bug<br>
-11.  支持不使用插件GUI，用于教室等特殊情况，在配置文件添加以下内容：<br>
-[General]<br>
-DisableGUI=1<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2022<br />
+            <span>02.26</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.4.1版</h2>
+            1. 初步适配高分屏，插件界面更细腻<br />
+            2.
+            改进自动签到功能（需先进行配置），优化高分屏下的工作效果，支持自定义签到参数，增加匹配算法<br />
+            3. 优化与 XP 系统的兼容性<br />
+            4.
+            支持保存某些设置配置，无需每次重设，包括：隐藏插件文字，拦截全屏截图，实时显示认真度信息，停止显示日志，<br />
+            锁定宽高数据，PPT导出设置，签到相关设置<br />
+            5. 新增签到 WebHook 上报，用于支持专业用户的二次开发（如通知 QQ
+            机器人发送提示消息等）<br />
+            6. 插件主窗口实现了窗口阴影和圆角化，部分按钮增加了提示信息<br />
+            7. 添加 TeamViewerQS 一键下载运行按钮，方便远程控制协助<br />
+            8. 部分提示详细化，排版优化<br />
+            9. 公告支持展开<br />
+            10. 修复安装器 bug<br />
+            11.
+            支持不使用插件GUI，用于教室等特殊情况，在配置文件添加以下内容：<br />
+            [General]<br />
+            DisableGUI=1<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>10.30</span>
-                    </div>
-                    <div class="hintro">
-                        <h2 class="latest">Windows 4.4.0版</h2>
-                        1.  修复 UI 加载失败问题<br>
-                        2.  调整细节，增加更多bug<br>
-                        </div>
-                        </div>
-                        </div>
-                                                                                                                                                                                        
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>10.23</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.9版</h2>
-1.  适配 无限宝 V16.0 版本功能与界面<br>
-2.  优化 自动签到小幅优化<br>
-3.  添加 插件窗口阴影<br>
-4.  优化 压缩程序体积<br>
-【注】此版本基于全新底层开发，可能存在bug，请稍安勿躁<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>10.30</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.4.0版</h2>
+            1. 修复 UI 加载失败问题<br />
+            2. 调整细节，增加更多bug<br />
+          </div>
         </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>08.08</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.8版</h2>
-1.  修复 置顶签到失败问题<br>
-2.  优化 最小化功能：还原后默认全屏无限宝<br>
-3.  添加 签到窗口坐标查找超时提示铃<br>
-4.  适配 最小化、窗口化、隐匿模式下支持拦截截图-切换回无限宝功能<br>
-5.  优化 部分提示与细节<br>
-                </div>
-            </div>
-        </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>08.07</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.7版</h2>
-1.  修复 拦截截图功能与自动签到冲突<br>
-2.  恢复 自动签到测试功能<br>
-3.  优化 加载机制，减小启动崩溃几率<br>
-                </div>
-            </div>
-        </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>08.06</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.6版</h2>
-1.  新增 拦截全屏截图，支持极速回到无限宝窗口或截黑色图<br>
-2.  修复 自动签到置顶窗口可能失败的问题<br>
-                </div>
-            </div>
-        </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>07.28</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.5版</h2>
-1.  新增 自动签到，内置于插件扩展视图，注意按红字操作<br>
-2.  修复 若干bugs，Win10 请重下最新版<br>
-                </div>
-            </div>
-        </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>07.19</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.4版</h2>
-1.  优化 与新版无限宝兼容性<br>
-2.  优化 阻止窥屏自定义图片<br>
-3.  优化 托盘菜单、部分界面及提示<br>
-4.  优化 将无限宝设置为壁纸（尚存在bug）<br>
-5.  优化 默认关闭解禁按钮<br>
-6.  优化 默认打开禁止监视进程<br>
-7.  优化 解禁按钮功能隐藏呼叫助教<br>
-8.  修复 聊天界面美化失效链接<br>
-9.  增加 美化支持选择本地图片<br>
-                </div>
-            </div>
-        </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>02.25</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.3版</h2>
-1.  修复 PPT 导出崩溃。<br>
-2.  修复右键关闭插件窗口丢失设置。<br>
-3.  更新自动签到。<br>
-4.  聊天界面美化支持自定义图片网址。<br>
-5.  增加备用服务器。<br>
-6.  压缩体积。<br>
-                </div>
-            </div>
-        </div>
-        <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2021<br>
-                    <span>02.07</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.2版</h2>
-                    【自动签到】<br>
-1.  启动方式更改，更加稳定。<br>
-2.  完善引导提示，设置项更改。<br>
-3.  提示模式可以自动置顶窗口。<br>
-4.  再度优化自动签到，提升成功率。<br>
-5.  添加新选项：还原鼠标位置，默认关闭。<br>
-6.  签到失败时响铃三声警告（强制，无视提示音设置）。<br>
-7.  UI 调整，更加现代化（也许）。<br>
-【插件主程序】<br>
-1.  调整 通用对话框样式（自定义图片）。<br>
-2.  修复 PPT导出可能崩溃问题。<br>
-3.  修复 “结束无限宝进程”存在托盘图标残留的问题.<br>
-4.  完善 崩溃处理。<br>
-5.  压缩程序体积，调整一些细节。<br>
-                </div>
-            </div>
-        </div>
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>12.26</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.3.1版</h2>
-                    1.  完全重写 PPT 导出，支持新版无限宝、支持导出无动画，无需填写间隔时长。<br>
-2.  合并新版滑动自动签到，旧版本已删除。<br>
-3.  禁止监视键盘和进程列表可取消。<br>
-4.  亿点点界面细节调整。<br>
-5.  优化自定义图片操作逻辑。<br>
-6.  修复自动签到无法测试 bug。<br>
-7.  自动签到日志显示调整。<br>
-                </div>
-            </div>
-        </div>
-<div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>08.02</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.2.0版</h2>
-                    1.  提升稳定性。<br>
-2.  新增功能-设置无限宝窗口为壁纸。<br>
-                </div>
-            </div>
-        </div>
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>08.01</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.1.0版</h2>
-                    1.  修复修改认真度的bug。<br>
-2.  优化部分判定逻辑。<br>
-                </div>
-            </div>
-        </div>
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>07.31</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 4.0.0版</h2>
-                    1.  船新的UI<br>
-2.  更高效率的底层HOOK<br>
-3.  稳定性提高，闪退概率降低<br>
-4.  新增功能：锁定窗口大小<br>
-5.  新增选项：显示认真度信息<br>
-6.  新增：禁止无限宝使用麦克风<br>
-                </div>
-            </div>
-        </div>
-        
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>07.23</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.6.0版</h2>
-                    1.  优化自动签到，支持错误日志显示；<br>
-2.  修复若干小bug，增加用户统计；<br>
-                </div>
-            </div>
-        </div>
-        
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>07.21</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.5.9版</h2>
-                    1.  自动签到专项适配，提升启动稳定性；<br>
-2.  全新安装程序，解决报毒问题，缩减体积；<br>
-3.  细节调整、更新逻辑调整。<br>
-                </div>
-            </div>
-        </div>
-        
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>07.20</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.5.8版</h2>
-                    1.  修复自动签到bug，采用多线程解压处理；<br>
-2.  修复美化bug、托盘图标bug；<br>
-3.  新增用户协议，安装器增加彩蛋。<br>
-                </div>
-            </div>
-        </div>
-        
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>07.19</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.5.7版</h2>
-                    1.  自动签到选择界面优化；<br>
-2.  修复安装器bug.<br>
-                </div>
-            </div>
-        </div>
-        
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>07.19</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.5.6版</h2>
-                    1.  新增两套签到方案；<br>
-2.  公告展示优化；<br>
-3.  UI细节调整。<br>
-                </div>
-            </div>
-        </div>
+      </div>
 
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>05.02</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.4.1版</h2>
-                    1.  增加【隐匿模式】,玩游戏更顺畅~,隔壁小孩都馋哭了(win7 可能会有bug)<br>
-2.  修复认真修改,妈妈再也不用担心我被提醒了(稳定无比，一定要看红字部分)<br>
-3.  优化自动签到<br>
-                </div>
-            </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>10.23</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.9版</h2>
+            1. 适配 无限宝 V16.0 版本功能与界面<br />
+            2. 优化 自动签到小幅优化<br />
+            3. 添加 插件窗口阴影<br />
+            4. 优化 压缩程序体积<br />
+            【注】此版本基于全新底层开发，可能存在bug，请稍安勿躁<br />
+          </div>
         </div>
-
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>04.16</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.2.2版</h2>
-                    1.  解除锁屏，不能最小化，但是可以运行其他程序<br>
-2.  选择窗口化之后可以最小化<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>08.08</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.8版</h2>
+            1. 修复 置顶签到失败问题<br />
+            2. 优化 最小化功能：还原后默认全屏无限宝<br />
+            3. 添加 签到窗口坐标查找超时提示铃<br />
+            4. 适配 最小化、窗口化、隐匿模式下支持拦截截图-切换回无限宝功能<br />
+            5. 优化 部分提示与细节<br />
+          </div>
         </div>
-
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>04.13</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.2.1版</h2>
-                    1.  增加统计数据；<br>
-2.  修复PPT导出清理空文件夹bug；<br>
-3.  异常退出无法复现暂未修复，增加警示；<br>
-4.  新增自动检测更新<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>08.07</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.7版</h2>
+            1. 修复 拦截截图功能与自动签到冲突<br />
+            2. 恢复 自动签到测试功能<br />
+            3. 优化 加载机制，减小启动崩溃几率<br />
+          </div>
         </div>
-
-    <div class="history">
-            <div class="bounce bounceInDown" style="display: block;">
-                <div class="htime">
-                    2020<br>
-                    <span>04.11</span>
-                </div>
-                <div class="hintro">
-                    <h2 class="latest">Windows 3.1.0版</h2>
-                    1.  全系统支持(XP,win7/8/10)<br>
-2.  一次安装，永久生效<br>
-支持功能：<br>
-1.  解除锁屏，自动签到<br>
-2.  修改认真度<br>
-3.  解禁按钮限制<br>
-4.  拦截无限宝屏幕截图，并可以替换成其他图片<br>
-5.  优化无限宝程序结构，使得资源占用更低，启动速度更快(这种优化工作居然要破解者来做)<br>
-                </div>
-            </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>08.06</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.6版</h2>
+            1. 新增 拦截全屏截图，支持极速回到无限宝窗口或截黑色图<br />
+            2. 修复 自动签到置顶窗口可能失败的问题<br />
+          </div>
         </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>07.28</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.5版</h2>
+            1. 新增 自动签到，内置于插件扩展视图，注意按红字操作<br />
+            2. 修复 若干bugs，Win10 请重下最新版<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>07.19</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.4版</h2>
+            1. 优化 与新版无限宝兼容性<br />
+            2. 优化 阻止窥屏自定义图片<br />
+            3. 优化 托盘菜单、部分界面及提示<br />
+            4. 优化 将无限宝设置为壁纸（尚存在bug）<br />
+            5. 优化 默认关闭解禁按钮<br />
+            6. 优化 默认打开禁止监视进程<br />
+            7. 优化 解禁按钮功能隐藏呼叫助教<br />
+            8. 修复 聊天界面美化失效链接<br />
+            9. 增加 美化支持选择本地图片<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>02.25</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.3版</h2>
+            1. 修复 PPT 导出崩溃。<br />
+            2. 修复右键关闭插件窗口丢失设置。<br />
+            3. 更新自动签到。<br />
+            4. 聊天界面美化支持自定义图片网址。<br />
+            5. 增加备用服务器。<br />
+            6. 压缩体积。<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2021<br />
+            <span>02.07</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.2版</h2>
+            【自动签到】<br />
+            1. 启动方式更改，更加稳定。<br />
+            2. 完善引导提示，设置项更改。<br />
+            3. 提示模式可以自动置顶窗口。<br />
+            4. 再度优化自动签到，提升成功率。<br />
+            5. 添加新选项：还原鼠标位置，默认关闭。<br />
+            6. 签到失败时响铃三声警告（强制，无视提示音设置）。<br />
+            7. UI 调整，更加现代化（也许）。<br />
+            【插件主程序】<br />
+            1. 调整 通用对话框样式（自定义图片）。<br />
+            2. 修复 PPT导出可能崩溃问题。<br />
+            3. 修复 “结束无限宝进程”存在托盘图标残留的问题.<br />
+            4. 完善 崩溃处理。<br />
+            5. 压缩程序体积，调整一些细节。<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>12.26</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.3.1版</h2>
+            1. 完全重写 PPT
+            导出，支持新版无限宝、支持导出无动画，无需填写间隔时长。<br />
+            2. 合并新版滑动自动签到，旧版本已删除。<br />
+            3. 禁止监视键盘和进程列表可取消。<br />
+            4. 亿点点界面细节调整。<br />
+            5. 优化自定义图片操作逻辑。<br />
+            6. 修复自动签到无法测试 bug。<br />
+            7. 自动签到日志显示调整。<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>08.02</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.2.0版</h2>
+            1. 提升稳定性。<br />
+            2. 新增功能-设置无限宝窗口为壁纸。<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>08.01</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.1.0版</h2>
+            1. 修复修改认真度的bug。<br />
+            2. 优化部分判定逻辑。<br />
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>07.31</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 4.0.0版</h2>
+            1. 船新的UI<br />
+            2. 更高效率的底层HOOK<br />
+            3. 稳定性提高，闪退概率降低<br />
+            4. 新增功能：锁定窗口大小<br />
+            5. 新增选项：显示认真度信息<br />
+            6. 新增：禁止无限宝使用麦克风<br />
+          </div>
+        </div>
+      </div>
 
-        
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>07.23</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.6.0版</h2>
+            1. 优化自动签到，支持错误日志显示；<br />
+            2. 修复若干小bug，增加用户统计；<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>07.21</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.5.9版</h2>
+            1. 自动签到专项适配，提升启动稳定性；<br />
+            2. 全新安装程序，解决报毒问题，缩减体积；<br />
+            3. 细节调整、更新逻辑调整。<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>07.20</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.5.8版</h2>
+            1. 修复自动签到bug，采用多线程解压处理；<br />
+            2. 修复美化bug、托盘图标bug；<br />
+            3. 新增用户协议，安装器增加彩蛋。<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>07.19</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.5.7版</h2>
+            1. 自动签到选择界面优化；<br />
+            2. 修复安装器bug.<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>07.19</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.5.6版</h2>
+            1. 新增两套签到方案；<br />
+            2. 公告展示优化；<br />
+            3. UI细节调整。<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>05.02</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.4.1版</h2>
+            1. 增加【隐匿模式】,玩游戏更顺畅~,隔壁小孩都馋哭了(win7
+            可能会有bug)<br />
+            2.
+            修复认真修改,妈妈再也不用担心我被提醒了(稳定无比，一定要看红字部分)<br />
+            3. 优化自动签到<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>04.16</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.2.2版</h2>
+            1. 解除锁屏，不能最小化，但是可以运行其他程序<br />
+            2. 选择窗口化之后可以最小化<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>04.13</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.2.1版</h2>
+            1. 增加统计数据；<br />
+            2. 修复PPT导出清理空文件夹bug；<br />
+            3. 异常退出无法复现暂未修复，增加警示；<br />
+            4. 新增自动检测更新<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="bounce bounceInDown" style="display: block">
+          <div class="htime">
+            2020<br />
+            <span>04.11</span>
+          </div>
+          <div class="hintro">
+            <h2 class="latest">Windows 3.1.0版</h2>
+            1. 全系统支持(XP,win7/8/10)<br />
+            2. 一次安装，永久生效<br />
+            支持功能：<br />
+            1. 解除锁屏，自动签到<br />
+            2. 修改认真度<br />
+            3. 解禁按钮限制<br />
+            4. 拦截无限宝屏幕截图，并可以替换成其他图片<br />
+            5.
+            优化无限宝程序结构，使得资源占用更低，启动速度更快(这种优化工作居然要破解者来做)<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="tail"></div>
     </div>
-    <div class="tail"></div>
-</div>
-<div class="footer">
-Copyright © 2020-2023 klxn.gitee.io All Rights Reserved<br>
-无限宝爱好者团队
-</div>
+    <div class="footer">
+      <span class="footer_str"></span>
+    </div>
 
-<script src="./proxy_files/172.js"></script>
-<script type="text/javascript">
-
-if($('.recodewrap').length){
-    var ht=0,
-        bounce = $('.bounce');
-    bounce.css({display:'block'});
-    $('.history').each(function(i, n) {
-        //console.log($(n).height())
-        ht+=($(n).height()+30);
-    });
-    bounce.removeAttr('style');
-    $('.recodewrap').animate({height:ht},'slow');   
-    var cs=0;
-    $('.bounce').each(function(i, n) {
-        setTimeout(function(){
-            $(n).show().addClass('bounceInDown')
-        },cs)
-        cs+=200;
-    });
-}
-</script>
- <!--[if IE 6]>
-<script src="http://se.360.cn/js/DD_belatedPNG.js"></script>
-<script>
-  DD_belatedPNG.fix('.nav a,.links a,.logo');
-</script>
-<![endif]--> 
-
-</body></html>
+    <script src="./proxy_files/172.js"></script>
+    <script type="text/javascript">
+      if ($(".recodewrap").length) {
+        var ht = 0,
+          bounce = $(".bounce");
+        bounce.css({ display: "block" });
+        $(".history").each(function (i, n) {
+          //console.log($(n).height())
+          ht += $(n).height() + 30;
+        });
+        bounce.removeAttr("style");
+        $(".recodewrap").animate({ height: ht }, "slow");
+        var cs = 0;
+        $(".bounce").each(function (i, n) {
+          setTimeout(function () {
+            $(n).show().addClass("bounceInDown");
+          }, cs);
+          cs += 200;
+        });
+      }
+    </script>
+    <!--[if IE 6]>
+      <script src="http://se.360.cn/js/DD_belatedPNG.js"></script>
+      <script>
+        DD_belatedPNG.fix(".nav a,.links a,.logo");
+      </script>
+    <![endif]-->
+  </body>
+</html>
