@@ -1,0 +1,72 @@
+
+body{ margin:0; padding:0; font-family:'微软雅黑'; background:#f9f9f9;}
+ul,li,h1,dl,dt,dd{list-style:none; margin:0; padding:0}
+a{text-decoration:none;}
+.fl{ float:left}
+.fr{float:right}
+.logo, .w_item, .m_item, .i_item, .a_item{background-image: url(http://p7.qhimg.com/d/inn/7b971c7a/global.png);
+background-repeat: no-repeat;}
+.header{width:100%;height:150px;position:relative;background-color:white;border-bottom: 1px solid #DFDFDF;}
+.header .logo{float:left;margin-left:80px;margin-top:33px; width: 192px; height: 56px; background-position: 0 0;}
+.header .nav{ position: absolute; width: 500px; left: 50%; margin-left: -200px; top: 18px; }
+.header .nav a{float:left;margin:18px;text-align: center; text-indent: -9999px;}
+.header .nav .w_item{ width: 92px; height: 95px; background-position: 0 -116px;}
+.header .nav .m_item{ width: 92px; height: 95px; background-position: 0 -211px; margin-top: 19px;}
+.header .nav .i_item{ width: 68px; height: 95px; background-position: 0 -306px; margin-top: 20px;}
+.header .nav .a_item{ width: 72px; height: 95px; background-position: 0 -401px; margin-top: 20px;}
+.header .nav .w_item_a,.header .nav .w_item:hover{ background-position: -276px -116px;}
+.header .nav .m_item_a,.header .nav .m_item:hover{ background-position: -276px -211px;}
+.header .nav .i_item_a,.header .nav .i_item:hover{ background-position: -204px -306px;}
+.header .nav .a_item_a,.header .nav .a_item:hover{ background-position: -216px -401px;}
+.header .links{float:right;margin-right:80px;margin-top:54px;}
+.header .links a{float:left;color:#3f3e3e;font-size: 14px;padding-left:33px;height:23px;line-height: 23px;margin-left: 28px;}
+.header .links .u-log{background: url(../img/u_icon_hover.png) no-repeat 1px center;color:#7caeff;}
+.header .links .luntan{background: url(../img/lt_icon.png) no-repeat left center;}
+.header .links .luntan:hover{background: url(../img/lt_icon_hover.png) no-repeat left center;color:#7caeff;}
+
+.inputdown{ margin:50px auto; width:360px;}
+.inputdown a{ display:block; margin:auto; overflow:hidden; zoom:1; width:222px; height:68px;background:url(../img/main.png) no-repeat -1px -268px;}
+.inputdown a:hover{ background-position:-224px -268px;}
+.inputdown span{font-size:12px; color:#FFF; float:left; margin:38px 0 0 76px; color:#c0d5f8;}
+.inputdown div{ color:#666; font-size:12px; text-align:center; margin-top:10px;}
+
+.mainwrap{ width:980px; margin:auto; overflow:hidden;min-height: 960px;}
+.model{ border-bottom:#f0f0f0 solid 1px; overflow:hidden;zoom:1;}
+.model p{ width:385px; color:#999; font-size:18px; line-height:26px; margin-top:10px;}
+
+.distb{ background:url(../img/distb.gif) no-repeat 15px center; height:310px;}
+.distb p{ margin:178px 504px;}
+
+.simple{ background:url(../img/simple.gif) no-repeat 75px center; height:356px;}
+.simple p{ margin:185px 73px;}
+
+.think{ background:url(../img/think.gif) no-repeat 53px center; height:328px;}
+.think p{ margin:191px 508px;}
+
+.excelent{ background:url(../img/excelent.gif) no-repeat 72px center; height:350px;}
+.excelent p{ margin:159px 73px;}
+
+.nobd{ border:none;}
+
+.subpg{ height:auto; background:#f5f5f5;}
+.datesty{background:url(https://p3.ssl.qhimg.com/t011716ac3ee4abc1ac.png) no-repeat 155px 0; height:62px; margin-top:100px;}
+.recodewrap{ background:url(../img/rline.png) repeat-y 185px; overflow:hidden; height:0; padding: 60px 0 20px;}
+.history{ overflow:hidden;zoom:1; margin-top:30px;}
+.htime{ float:left; padding-right:25px; width:168px; text-align:right; background:url(../img/dot.png) no-repeat right 23px; height:100px; font-size:14px; font-family:Arial, sans-serif; color:#999; line-height:20px;}
+.htime span{ font-size:26px; color:#9a9a9a;}
+.hintro{float:left; padding-left:22px;font-size:13px; color:#767676; line-height:22px;}
+.hintro h2{ font-size:24px; color:#888; font-weight:normal; margin:17px 0 15px;}
+.hintro .latest{ color:#000;}
+
+.tail{ background:url(../img/tail.png) no-repeat 185px; height:73px;}
+
+.bounce{-webkit-animation: 1.5s ease 0ms both;animation: 2s ease 0ms both; display:none; overflow:hidden;zoom:1;}
+
+.agreement{ font-family:'宋体'; font-size:12px; padding-top:30px;}
+.agreement p{ line-height:24px; margin-top:0;}
+.agreement h1{ font-size:14px; margin-bottom:10px;}
+.agreement h2{ font-size:12px; margin-bottom:8px;}
+.agreement hr{ border:none; border-top:#ddd solid 1px; margin:15px 0 17px;}
+.mt{ margin-top:30px;}
+
+.footer{ background:#f6f6f6; border-top:#efefef solid 1px; padding:30px 0 50px; text-align:center; line-height:23px; font-size:12px; color:#bbb; font-family:Tahoma; margin-top:30px;}
